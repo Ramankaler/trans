@@ -21,9 +21,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-900 mb-2">Contact Info</h4>
             <p className="text-sm text-gray-600">
-              📞 (555) 123-4567<br />
-              📧 info@transpox.com<br />
-              🏢 123 Transport Ave, City, State 12345
+              📞 +91 94787-50773 <br />
+              📧 info@piertrans.com<br />
+              🏢 Jalandhar, Punjab, India
             </p>
           </div>
         </div>
