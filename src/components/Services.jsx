@@ -2,21 +2,32 @@
 import { motion } from "framer-motion";
 import { FaTruck, FaShip, FaPlane } from "react-icons/fa";
 
+// Import images
+import truckImage1 from "../assets/images/goodloading-truck-loading.png";
+import truckImage2 from "../assets/images/Bild-4-1-768x512.webp";
+import truckImage3 from "../assets/images/images.png";
+
 const services = [
   {
     icon: <FaTruck size={40} />,
     title: "Road Transport",
     desc: "Reliable nationwide trucking services for all cargo sizes.",
+    image: truckImage1,
+    alt: "Road transport truck"
   },
   {
     icon: <FaShip size={40} />,
     title: "Ocean Freight",
     desc: "Cost-effective sea shipping for bulk goods and containers.",
+    image: truckImage2,
+    alt: "Ocean freight shipping"
   },
   {
     icon: <FaPlane size={40} />,
     title: "Air Cargo",
     desc: "Fast and secure air freight solutions for urgent deliveries.",
+    image: truckImage3,
+    alt: "Air cargo transport"
   },
 ];
 
@@ -45,6 +56,13 @@ export default function Services() {
             >
               <div className="flex justify-center mb-4 text-blue-600">
                 {s.icon}
+              </div>
+              <div className="mb-4">
+                <img 
+                  src={s.image} 
+                  alt={s.alt}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
               <p className="text-gray-600">{s.desc}</p>

@@ -2,21 +2,26 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Import images
+import truckImage1 from "../assets/images/goodloading-truck-loading.png";
+import truckImage2 from "../assets/images/Bild-4-1-768x512.webp";
+import truckImage3 from "../assets/images/images.png";
+
 const slides = [
   {
     title: "Nationwide Trucking",
     subtitle: "Reliable & fast logistics across India",
-    imageUrl: "/assets/images/truck1.jpg",
+    imageUrl: truckImage1,
   },
   {
     title: "Safe Cargo Transport",
     subtitle: "We handle goods with utmost care",
-    imageUrl: "/assets/images/truck2.jpg",
+    imageUrl: truckImage2,
   },
   {
     title: "On-Time Delivery",
     subtitle: "Your schedule is our priority",
-    imageUrl: "/assets/images/truck3.jpg",
+    imageUrl: truckImage3,
   },
 ];
 
