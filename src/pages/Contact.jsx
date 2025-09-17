@@ -1,4 +1,4 @@
-// src/pages/Contact.jsx
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -12,16 +12,13 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // 🚀 Future: Replace this with an API call or EmailJS
     console.log("Form submitted:", form);
-
     setSubmitted(true);
     setForm({ name: "", email: "", message: "" });
   };
 
   return (
-    <section className="px-8 py-16 max-w-4xl mx-auto">
+    <section className="px-8 py-16 max-w-6xl mx-auto">
       <motion.h2
         className="text-3xl font-bold mb-6 text-center"
         initial={{ opacity: 0, y: -20 }}
@@ -105,6 +102,35 @@ export default function Contact() {
           ✅ Thank you for contacting us! We’ll respond shortly.
         </motion.div>
       )}
+
+      {/* Map */}
+      <div className="mt-16">
+        <h3 className="text-xl font-semibold mb-4">Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388.67758858508876!2d75.58844403229783!3d31.316984942285497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5b321a4a45%3A0xf64763d68a62c389!2sFentonganj%2C%20Jalandhar%2C%20Punjab%20144001!5e0!3m2!1sen!2sin!4v1758144047110!5m2!1sen!2sin"
+          width="100%"
+          height="300"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          className="rounded-xl shadow-lg"
+        ></iframe>
+
+
+      </div>
+
+      {/* Social Links */}
+      <div className="flex justify-center space-x-6 mt-8 text-gray-600">
+        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-blue-600">
+          Facebook
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-600">
+          LinkedIn
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-blue-600">
+          Instagram
+        </a>
+      </div>
     </section>
   );
 }
