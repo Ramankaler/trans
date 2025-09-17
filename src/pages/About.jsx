@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const companyInfo = {
   profile: "TranspoX has been providing reliable trucking solutions for over 20 years.",
   management: [
-    { name: "John Smith", role: "CEO", img: "https://randomuser.me/api/portraits/men/45.jpg" },
-    { name: "Emily Davis", role: "Operations Head", img: "https://randomuser.me/api/portraits/women/65.jpg" },
+    { name: "Pramod", role: "CEO", img: "https://randomuser.me/api/portraits/men/45.jpg" },
+    { name: "Raman kaler", role: "Operations Head", img: "https://randomuser.me/api/portraits/women/65.jpg" },
   ],
   trucks: [
     { id: 1, model: "Volvo FH16", capacity: "44 Tons" },
