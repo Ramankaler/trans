@@ -108,7 +108,10 @@ export default function Contact() {
         <h3 className="text-xl font-semibold mb-4">Our Location</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388.67758858508876!2d75.58844403229783!3d31.316984942285497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5b321a4a45%3A0xf64763d68a62c389!2sFentonganj%2C%20Jalandhar%2C%20Punjab%20144001!5e0!3m2!1sen!2sin!4v1758144047110!5m2!1sen!2sin"
+<<<<<<< HEAD
           title="Contact Location Map"
+=======
+>>>>>>> 71ea48dc5fa4802b3244804d997fd0c5a692c1f6
           width="100%"
           height="300"
           style={{ border: 0 }}
